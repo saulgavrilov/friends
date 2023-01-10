@@ -1,0 +1,92 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: black;
+  line-height: 0;
+}
+
+.navbar a:hover {
+  color: var(--clr-primary);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container .left,
+.navbar .container .center,
+.navbar .container .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navbar .container .left h1 {
+  font-size: 16px;
+  line-height: 0;
+  color: var(--clr-primary);
+}
+
+.navbar .container .center form {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container .center form input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+.navbar .container .center form svg {
+  margin-left: -22px;
+}
+
+.navbar .container .right .user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar .container .right .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dark Mode */
+.wrapper.dark .navbar {
+  background: #222222;
+  border-bottom: 1px solid #444444;
+}
+
+.wrapper.dark .navbar svg {
+  color: white;
+}
+
+.wrapper.dark .navbar svg:hover {
+  color: var(--clr-primary);
+}
+
+.wrapper.dark .navbar .container .center form input {
+  background: #444444;
+  border: none;
+  color: white;
+}
+
+.wrapper.dark .navbar .container .center form input::placeholder {
+  color: lightgray;
+}

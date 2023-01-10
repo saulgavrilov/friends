@@ -1,0 +1,107 @@
+.auth {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth .card {
+  display: flex;
+  width: 50%;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.auth.reverse .card {
+  flex-direction: row-reverse;
+}
+
+.auth .card .left {
+  flex: 1;
+  background: linear-gradient(rgba(9, 132, 227, 0.5), rgba(9, 132, 227, 0.5)),
+    url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
+      center;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  color: white;
+}
+
+.auth .card .left h1 {
+  font-size: 100px;
+}
+
+.auth .card .left p {
+  font-size: 14px;
+}
+
+.auth .card .left section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth .card .left section span {
+  font-size: 12px;
+}
+
+.auth .card .left section button {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: white;
+  color: var(--clr-primary);
+  font-weight: bold;
+}
+
+.auth .card .left section button:hover {
+  background: var(--clr-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.auth .card .right {
+  flex: 1;
+  background: white;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.auth .card .right h1 {
+  color: #555555;
+}
+
+.auth .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth .card .right form input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 10px;
+}
+
+.auth .card .right form button {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: var(--clr-primary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

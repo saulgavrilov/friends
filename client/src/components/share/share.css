@@ -1,0 +1,81 @@
+.share .container-x3 {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.share hr {
+  margin: 20px 0px;
+  border: none;
+  height: 0.5px;
+  background-color: lightgray;
+}
+
+.share .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share .top .left {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.share .top .left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.share .top .left input {
+  border: none;
+  outline: none;
+  padding: 20px 10px;
+  background-color: transparent;
+  width: 60%;
+}
+
+.share .top .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.share .top .right .file {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.share .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share .bottom .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.share .bottom .left .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.share .bottom .right button {
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  border-radius: 3px;
+}

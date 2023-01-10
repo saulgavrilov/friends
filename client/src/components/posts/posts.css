@@ -1,0 +1,9 @@
+.posts {
+  padding: 10px 0;
+}
+
+.posts .container-x3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
